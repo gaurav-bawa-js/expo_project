@@ -1,11 +1,11 @@
-import { Text, View } from 'react-native'
+import { Welcome } from '@/components'
+import { StatusBar } from 'expo-status-bar'
 
-const App = () => {
+export default function Main() {
   return (
-    <View className='flex-1 items-center justify-center bg-slate-600'>
-      <Text className='text-slate-800'>Styling just works! 🎉</Text>
-    </View>
+    <>
+      <Welcome />
+      <StatusBar style='inverted' />
+    </>
   )
 }
-
-export default App
